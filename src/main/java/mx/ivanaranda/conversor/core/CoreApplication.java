@@ -1,5 +1,6 @@
 package mx.ivanaranda.conversor.core;
 
+import mx.ivanaranda.conversor.core.principal.Principal;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,6 +14,7 @@ public class CoreApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("Hola Conversor!!!");
+		Principal principal = new Principal();
+		principal.menu();
 	}
 }
