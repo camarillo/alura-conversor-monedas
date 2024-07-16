@@ -31,7 +31,7 @@ public class Principal {
         var opcion = -1;
         while (opcion != OPCIONES.size()){
             System.out.println("--------------------------------------------------");
-            System.out.println(".:: CONVERSOR DE7 MONEDAS - ALURA ::.");
+            System.out.println(".:: CONVERSOR DE MONEDAS - ALURA ::.");
             System.out.println(" Seleccione la moneda que requiere convertir");
             for(Conversion conversion : OPCIONES){
                 System.out.println(OPCIONES.indexOf(conversion)+ "). " + conversion.monedaNombre() + "(" + conversion.moneda() + ")" + " a " + conversion.monedaConversionNombre() + "(" + conversion.monedaConversion() + ")");
